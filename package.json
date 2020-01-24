@@ -22,6 +22,7 @@
     "yargs": "^14.2.0"
   },
   "devDependencies": {
+    "handlebars": "^4.5.0",
     "prettier-standard": "^16.1.0"
   }
 }
