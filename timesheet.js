@@ -22,7 +22,7 @@ const puppeteer = require('puppeteer')
     // Get new day handle after removed by adding hours
     const day = (await page.$$('.timesheet-day .day'))[i]
     await day.click()
-    await new Promise(resolve => setTimeout(resolve, 200))
+    await page.waitFor(200)
 
     const activeDay = await page.$eval('.active .day', el => el.textContent)
     try {
