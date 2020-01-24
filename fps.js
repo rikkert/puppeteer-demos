@@ -7,14 +7,14 @@ const puppeteer = require('puppeteer')
   const page = await browser.newPage()
   const protocol = await page.target().createCDPSession()
   await protocol.send('Overlay.setShowFPSCounter', { show: true })
-  await page.goto('http://www.know-it.nl')
+  await page.goto('http://www.know-it.nl/leden')
 
   // Do graphical regressions here by interacting with the page
   await protocol.send('Input.synthesizeScrollGesture', {
     x: 100,
     y: 100,
     yDistance: -400,
-    repeatCount: 3
+    repeatCount: 5
   })
 
   await page.screenshot({
