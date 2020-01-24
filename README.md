@@ -1,16 +1,9 @@
 # Puppeteer Demos
 
-This repo contains various demos of the concepts, ideas and experiments over puppeteer that were demonstrated as part of the talks of mine. You can also find references of the links which are shown during the talk.
+This repository contains various demos of concepts, ideas and experiments with puppeteer that were demonstrated during the talk I did for Know IT. All credits go to my friend Önder Ceylanare for developing the original presentation and demos.
 
-**Puppeteer can automate that! @AmsterdamJS:** https://www.slideshare.net/nderCeylan/puppeteer-can-automate-that-amsterdamjs
 
-**Puppeteer can automate that! @Frontmania:** https://www.slideshare.net/nderCeylan/puppeteer-can-automate-that
-
-**Introducing perf budgets on CI with puppeteer @perf.now():** https://www.slideshare.net/nderCeylan/introducing-perf-budgets-on-ci-with-puppeteer
-
-> If you attended my talk, would you help me make my next one better? Please share your feedback with this form https://onderceylan.typeform.com/to/Z4SbFn. It'll only take a minute, promise :)
-
-The scripts in this repo are built for training and demonstration purposes, feel free to use them at your own risk.
+The scripts in this repository are built for training and demonstration purposes only, feel free to use them at your own risk.
 
 ## How to run scripts?
 
@@ -22,13 +15,11 @@ npm i
 Execute scripts with
 ```
 node fps.js
-cd whatsapp && node whatsapp.js
 ```
 
 Run tests with
 ```
 npx jest dom-snapshot.spec.js
-cd budget && npx jest assert-metrics.spec.js
 ```
 
 ## References in talk 
