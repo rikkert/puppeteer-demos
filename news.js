@@ -43,7 +43,7 @@ const getTops = async (browser, url) => {
   await page.goto(url)
 
   // Accept cookie wall
-  const btn = await page.$('.button.fjs-set-consent')
+  const btn = await page.$('.pg-accept-button')
   if (btn) {
     await btn.click()
     await page.waitForNavigation({ waitUntil: 'networkidle0' })
